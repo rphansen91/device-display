@@ -2,7 +2,7 @@
   "name": "device-display",
   "version": "1.0.0",
   "description": "Render any URL within a fully interactive Desktop, Mobile, or Tablet display",
-  "main": "index.js",
+  "main": "device-display.js",
   "scripts": {
     "build": "browserify ./src/main.js > ./device-display.js",
     "test": "echo \"Error: no test specified\" && exit 1"
