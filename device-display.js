@@ -39,17 +39,22 @@ module.exports = frame => ({ device, screen }) => {
     return device;
 }
 },{}],4:[function(require,module,exports){
+var DeviceDisplay = window.DeviceDisplay || {}
+
 const loadDevice = require('./device');
 const render = require('./render');
 const insert = require('./insert');
 
-window.DeviceDisplay = (frame, opts) => {
+DeviceDisplay = (frame, opts) => {
     if (!opts) return new Error('Must supply options');
     
     return loadDevice(opts)
     .then(render(opts))
     .then(insert(frame))
 }
+
+window.DeviceDisplay = DeviceDisplay;
+module.exports = DeviceDisplay;
 },{"./device":2,"./insert":3,"./render":6}],5:[function(require,module,exports){
 Element.prototype.css = function (style) {
     Object.keys(style).map(s => this.style[s] = style[s]);
