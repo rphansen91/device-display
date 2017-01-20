@@ -1,6 +1,6 @@
 {
   "name": "device-display",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Render any URL within a fully interactive Desktop, Mobile, or Tablet display",
   "main": "device-display.js",
   "scripts": {
