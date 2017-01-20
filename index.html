@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Device Display</title>
+        <link rel="stylesheet" href="/main.css">
+    </head>
+    <body>
+        <iframe id="frame" src="http://espn.com" frameborder="0"></iframe>
+        <script src="/device-display.js"></script>
+        <script>
+            var frame = document.getElementById('frame');
+            DeviceDisplay(frame, {
+                src: '/assets/mac.png',
+                screen: {
+                    width: '1200px',
+                    height: '760px',
+                    top: '50px',
+                    left: '180px'
+                }
+            });
+        </script>
+
+    </body>
+</html>
