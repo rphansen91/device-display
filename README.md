@@ -1,7 +1,7 @@
 Device Display
 ==============
 
-![Demo](http://url/to/img.png)
+![Demo](https://raw.githubusercontent.com/rphansen91/device-display/master/assets/demo.png)
 [Demo](http://elevatejs.com)
 -----------
 
