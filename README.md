@@ -17,8 +17,7 @@ Usage
 var DeviceDisplay = require('device-display');
 var frame = document.getElementById('frame');
             
-DeviceDisplay(
-    frame, {
+DeviceDisplay(frame, {
     src: '/assets/mac.png',
     scale: 0.4,
     screen: {
@@ -30,9 +29,10 @@ DeviceDisplay(
         width: '1200px',
         height: '760px',
     }
-    }).then(function (element) {
-        // NEW WRAPPER ELEMENT AROUND IFRAME
-    }).catch(function () {
-        // ERRORS IF ANY OPTIONS FAIL
-    })
+})
+.then(function (element) {
+    // NEW WRAPPER ELEMENT AROUND IFRAME
+}).catch(function () {
+    // ERRORS IF ANY OPTIONS FAIL
+})
 ```
