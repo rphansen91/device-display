@@ -9,15 +9,23 @@
         <script src="/device-display.js"></script>
         <script>
             var frame = document.getElementById('frame');
-            DeviceDisplay(frame, {
+            var device = DeviceDisplay(frame, {
                 src: '/assets/mac.png',
+                scale: 0.4,
                 screen: {
+                    // ABSOLUTE POSITION OF SCREEN WITHIN IMAGE
                     width: '1200px',
                     height: '760px',
                     top: '50px',
                     left: '180px'
                 }
             });
+            device.ready(function (element) {
+                // NEW WRAPPER ELEMENT AROUND IFRAME
+            })
+            device.error(function (err) {
+                // ERRORS IF ANY OPTIONS FAIL
+            })
         </script>
 
     </body>
