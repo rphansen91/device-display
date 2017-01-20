@@ -1,20 +1,24 @@
 Device Display
 ==============
 
+Description
+-----------
+
 Render any URL within a fully interactive Desktop, Mobile, or Tablet display.
+[Demo](http://elevatejs.com)
 
 Usage
 -----
 
-1. Add iframes to the DOM as usual
+- Add iframes to the DOM as usual
 ```html
 <iframe id="frame" src="http://espn.com" frameborder="0"></iframe>
 ```
 
-2. Initialize the device
+- Initialize the device
 ```js
-
 var DeviceDisplay = require('device-display');
+
 var frame = document.getElementById('frame');
             
 DeviceDisplay(frame, {
