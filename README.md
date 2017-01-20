@@ -1,6 +1,7 @@
 Device Display
 ==============
 
+![Demo](http://url/to/img.png)
 [Demo](http://elevatejs.com)
 -----------
 
