@@ -1,11 +1,13 @@
 Device Display
 ==============
 
+[Demo](http://elevatejs.com)
+-----------
+
 Description
 -----------
 
 Render any URL within a fully interactive Desktop, Mobile, or Tablet display.
-[Demo](http://elevatejs.com)
 
 Usage
 -----
